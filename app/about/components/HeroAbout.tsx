@@ -3,7 +3,7 @@ import { stats } from "../data/aboutData";
 
 export default function HeroAbout() {
   return (
-    <section style={{
+    <section className="about-hero-section" style={{
       minHeight: "60vh",
       display: "flex",
       alignItems: "center",
@@ -84,7 +84,7 @@ export default function HeroAbout() {
         </p>
 
         {/* Stats row */}
-        <div style={{
+        <div className="about-hero-stats" style={{
           display: "flex",
           justifyContent: "center",
           gap: "0px",
@@ -93,7 +93,7 @@ export default function HeroAbout() {
           animation: "fadeUp 1s 0.45s ease both",
         }}>
           {stats.map((s, i) => (
-            <div key={s.label} style={{
+            <div key={s.label} className="about-hero-stat" style={{
               padding: "1.2rem 2.5rem",
               borderLeft: i === 0 ? "1px solid var(--border)" : "none",
               borderRight: "1px solid var(--border)",

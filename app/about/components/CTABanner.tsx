@@ -8,7 +8,7 @@ export default function CTABanner() {
   return (
     <section
       ref={ctaRef}
-      className={`reveal ${ctaV ? "visible" : ""}`}
+      className={`about-section-padding reveal ${ctaV ? "visible" : ""}`}
       style={{
         padding: "6rem 8%",
         background: "var(--dark)",

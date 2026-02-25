@@ -7,7 +7,7 @@ export default function Locations() {
   const { ref: locRef, visible: locV } = useReveal();
 
   return (
-    <section style={{ padding: "7rem 8%", background: "var(--charcoal)" }}>
+    <section className="about-section-padding" style={{ padding: "7rem 8%", background: "var(--charcoal)" }}>
       <div
         ref={locRef}
         className={`section-header reveal ${locV ? "visible" : ""}`}
@@ -19,7 +19,7 @@ export default function Locations() {
         </p>
       </div>
 
-      <div style={{
+      <div className="about-locations-grid" style={{
         display: "grid",
         gridTemplateColumns: "repeat(3, 1fr)",
         gap: "1.5px",

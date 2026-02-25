@@ -7,7 +7,7 @@ export default function Milestones() {
   const { ref: milRef, visible: milV } = useReveal();
 
   return (
-    <section style={{ padding: "7rem 8%", background: "var(--dark)" }}>
+    <section className="about-section-padding" style={{ padding: "7rem 8%", background: "var(--dark)" }}>
       <div
         ref={milRef}
         className={`section-header reveal ${milV ? "visible" : ""}`}
@@ -19,14 +19,14 @@ export default function Milestones() {
         </p>
       </div>
 
-      <div style={{
+      <div className="about-milestones-grid" style={{
         position: "relative",
         maxWidth: "800px",
         margin: "0 auto",
         paddingTop: "1rem",
       }}>
         {/* Vertical line */}
-        <div style={{
+        <div className="about-milestone-line" style={{
           position: "absolute",
           left: "50%",
           top: 0,
@@ -39,7 +39,7 @@ export default function Milestones() {
         {milestones.map((m, i) => (
           <div
             key={i}
-            className={`reveal ${milV ? "visible" : ""}`}
+            className={`about-milestone-item reveal ${milV ? "visible" : ""}`}
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
@@ -51,7 +51,7 @@ export default function Milestones() {
             {/* Left side */}
             {i % 2 === 0 ? (
               <>
-                <div style={{ textAlign: "right", paddingRight: "1.5rem" }}>
+                <div className="about-milestone-content" style={{ textAlign: "right", paddingRight: "1.5rem" }}>
                   <div style={{
                     fontFamily: "'Cinzel', serif",
                     fontSize: "2rem",

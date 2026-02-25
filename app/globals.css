@@ -980,6 +980,20 @@ footer {
   .nav-links.mobile-active~.nav-cta {
     right: 2rem;
   }
+
+  /* About Page Responsive - Tablet */
+  .about-story-grid {
+    grid-template-columns: 1fr !important;
+    gap: 4rem !important;
+  }
+
+  .about-locations-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .about-hero-section {
+    padding: 6rem 5% 4rem !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1008,5 +1022,67 @@ footer {
 
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  /* About Page Responsive - Mobile */
+  .about-hero-stats {
+    flex-direction: column !important;
+    gap: 0 !important;
+    max-width: 400px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .about-hero-stat {
+    border-left: 1px solid var(--border) !important;
+  }
+
+  .about-story-grid {
+    padding: 4rem 5% !important;
+  }
+
+  .about-image-container {
+    margin-bottom: 2rem;
+  }
+
+  .about-floating-card {
+    bottom: -1rem !important;
+    right: -1rem !important;
+    padding: 1rem 1.5rem !important;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-milestones-grid {
+    padding-left: 0 !important;
+  }
+
+  .about-milestone-item {
+    grid-template-columns: auto 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .about-milestone-line {
+    left: 12px !important;
+    transform: none !important;
+  }
+
+  .about-milestone-content {
+    text-align: left !important;
+    padding: 0 !important;
+  }
+
+  .about-locations-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-section-padding {
+    padding: 4rem 5% !important;
+  }
+
+  .about-hero-section {
+    padding: 5rem 5% 3rem !important;
   }
 }

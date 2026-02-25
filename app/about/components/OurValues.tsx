@@ -7,7 +7,7 @@ export default function OurValues() {
   const { ref: valRef, visible: valV } = useReveal();
 
   return (
-    <section style={{ padding: "7rem 8%", background: "var(--charcoal)" }}>
+    <section className="about-section-padding" style={{ padding: "7rem 8%", background: "var(--charcoal)" }}>
       <div
         ref={valRef}
         className={`section-header reveal ${valV ? "visible" : ""}`}
@@ -19,7 +19,7 @@ export default function OurValues() {
         </p>
       </div>
 
-      <div style={{
+      <div className="about-values-grid" style={{
         display: "grid",
         gridTemplateColumns: "repeat(2, 1fr)",
         gap: "1.5px",

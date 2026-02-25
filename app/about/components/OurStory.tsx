@@ -6,7 +6,7 @@ export default function OurStory() {
   const { ref: storyRef, visible: storyV } = useReveal();
 
   return (
-    <section style={{
+    <section className="about-story-grid" style={{
       padding: "7rem 8%",
       background: "var(--dark)",
       display: "grid",
@@ -17,7 +17,7 @@ export default function OurStory() {
       {/* Left — image */}
       <div
         ref={storyRef}
-        className={`reveal ${storyV ? "visible" : ""}`}
+        className={`about-image-container reveal ${storyV ? "visible" : ""}`}
         style={{ position: "relative" }}
       >
         {/* Main image */}
@@ -41,7 +41,7 @@ export default function OurStory() {
         </div>
 
         {/* Floating accent card */}
-        <div style={{
+        <div className="about-floating-card" style={{
           position: "absolute",
           bottom: "-2rem",
           right: "-2rem",
