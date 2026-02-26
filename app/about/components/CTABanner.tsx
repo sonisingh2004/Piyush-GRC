@@ -73,10 +73,10 @@ export default function CTABanner() {
         justifyContent: "center",
         position: "relative",
       }}>
-        <Link href="#contact" className="btn-primary">
+        <Link href="/contact" className="btn-primary">
           Get a Quote
         </Link>
-        <Link href="#products" className="btn-outline">
+        <Link href="/projects" className="btn-outline">
           View Projects
         </Link>
       </div>

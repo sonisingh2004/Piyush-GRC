@@ -41,9 +41,9 @@ export default function Navbar() {
         {[
           { label: "Home", href: "/" },
           { label: "About", href: "/about" },
-          { label: "Projects", href: "#projects" },
-          { label: "Features", href: "#features" },
-          { label: "Contact", href: "#contact" },
+          { label: "Projects", href: "/projects" },
+          { label: "Features", href: "/features" },
+          { label: "Contact", href: "/contact" },
         ].map((item) => (
           <li key={item.label}>
             <Link href={item.href} onClick={closeMobileMenu}>
@@ -53,7 +53,7 @@ export default function Navbar() {
         ))}
       </ul>
 
-      <Link href="#contact" className="nav-cta" onClick={closeMobileMenu}>
+      <Link href="/contact" className="nav-cta" onClick={closeMobileMenu}>
         Get a Quote
       </Link>
     </nav>

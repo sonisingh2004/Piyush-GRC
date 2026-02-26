@@ -25,8 +25,8 @@ export default function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <Link href="#projects" className="btn-primary">View Projects</Link>
-          <Link href="#contact" className="btn-outline">Request Quote</Link>
+          <Link href="/projects" className="btn-primary">View Projects</Link>
+          <Link href="/contact" className="btn-outline">Request Quote</Link>
         </div>
       </div>
 
