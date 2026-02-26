@@ -153,7 +153,7 @@ nav.scrolled {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 0 8%;
+  padding: 10rem 8% 0;
 }
 
 .hero-bg {
@@ -169,6 +169,7 @@ nav.scrolled {
   position: relative;
   z-index: 2;
   max-width: 620px;
+  padding-bottom: 10rem;
 }
 
 .hero-eyebrow {
@@ -213,7 +214,7 @@ nav.scrolled {
   font-size: 1.25rem;
   font-style: italic;
   color: var(--text-muted);
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.5rem;
   line-height: 1.6;
   animation: fadeUp 1s 0.3s ease both;
 }
@@ -223,7 +224,7 @@ nav.scrolled {
   line-height: 1.85;
   color: #a09888;
   max-width: 480px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   animation: fadeUp 1s 0.45s ease both;
 }
 
@@ -304,7 +305,7 @@ nav.scrolled {
 .hero-image-stack {
   position: absolute;
   right: 5%;
-  top: 50%;
+  top: calc(50% + -0.5rem);
   transform: translateY(-50%);
   width: 42%;
   max-width: 540px;
@@ -892,13 +893,14 @@ footer {
 @media (max-width: 900px) {
   #hero {
     min-height: 100vh;
-    padding: 6rem 5% 3rem;
+    padding: 8rem 5% 3rem;
     flex-direction: column;
     justify-content: center;
   }
 
   .hero-content {
     max-width: 100%;
+    padding-bottom: 0;
   }
 
   .hero-eyebrow {
@@ -945,7 +947,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem 1.5rem;
-    margin-top: 0;
+    margin-top: 4rem;
   }
 
   .stat {
