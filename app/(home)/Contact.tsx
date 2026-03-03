@@ -31,11 +31,21 @@ export default function Contact() {
         </div>
 
         <div className="contact-info-row">
+          <div className="contact-icon">✉️</div>
+          <div>
+            <div className="contact-label">Email</div>
+            <div className="contact-val">
+              <a href="mailto:piyushkumars083@gmail.com">piyushkumars083@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="contact-info-row">
           <div className="contact-icon">📍</div>
           <div>
             <div className="contact-label">Locations</div>
             <div className="contact-val">
-              Bhubaneswar, Odisha<br />Patna, Bihar<br />Deoghar, Jharkhand
+              Bhubaneswar, Odisha<br />Patna, Bihar<br />Deoghar, Jharkhand<br />Bhagalpur, Bihar<br />Kolkata, West Bengal
             </div>
           </div>
         </div>
@@ -81,12 +91,13 @@ export default function Contact() {
           <label>Product Interest</label>
           <select>
             <option value="">Select a product category</option>
-            <option>GRC Jali Panels</option>
-            <option>Column Capitals &amp; Bases</option>
-            <option>Fluted Pilasters</option>
-            <option>Ornamental Corbels</option>
-            <option>Complete Facade System</option>
-            <option>Custom Design</option>
+            <option>Pillars</option>
+            <option>Cornices</option>
+            <option>Bases</option>
+            <option>Capitals</option>
+            <option>Jali</option>
+            <option>Brackets</option>
+            <option>Balusters</option>
             <option>Other</option>
           </select>
         </div>

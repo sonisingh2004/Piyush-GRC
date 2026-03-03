@@ -70,4 +70,16 @@ export const locations = [
     tag: "Manufacturing Unit",
     icon: "🏭",
   },
+  {
+    city: "Bhagalpur",
+    state: "Bihar",
+    tag: "Manufacturing Unit",
+    icon: "🏭",
+  },
+  {
+    city: "Kolkata",
+    state: "West Bengal",
+    tag: "Manufacturing Unit",
+    icon: "🏭",
+  },
 ];

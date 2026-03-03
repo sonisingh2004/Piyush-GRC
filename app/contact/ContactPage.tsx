@@ -13,6 +13,13 @@ const contactInfo = [
     sub: "Available 24 hours, 7 days a week",
   },
   {
+    icon: "✉️",
+    label: "Email",
+    value: "piyushkumars083@gmail.com",
+    href: "mailto:piyushkumars083@gmail.com",
+    sub: "Send us your enquiry anytime",
+  },
+  {
     icon: "📍",
     label: "Headquarters",
     value: "Bhubaneswar, Odisha",
@@ -22,7 +29,7 @@ const contactInfo = [
   {
     icon: "🏭",
     label: "Manufacturing Units",
-    value: "Patna, Bihar · Deoghar, Jharkhand",
+    value: "Patna, Bihar · Deoghar, Jharkhand · Bhagalpur, Bihar · Kolkata",
     href: null,
     sub: "Regional production & dispatch centres",
   },
@@ -64,16 +71,31 @@ const locations = [
     icon: "🏭",
     phone: "+91 78271 34265",
   },
+  {
+    city: "Bhagalpur",
+    state: "Bihar",
+    role: "Manufacturing Unit",
+    icon: "🏭",
+    phone: "+91 78271 34265",
+  },
+  {
+    city: "Kolkata",
+    state: "West Bengal",
+    role: "Manufacturing Unit",
+    icon: "🏭",
+    phone: "+91 78271 34265",
+  },
 ];
 
 const productOptions = [
   "Select a product category",
-  "GRC Jali Panels",
-  "Column Capitals & Bases",
-  "Fluted Pilasters",
-  "Ornamental Corbels",
-  "Complete Facade System",
-  "Custom Design",
+  "Pillars",
+  "Cornices",
+  "Bases",
+  "Capitals",
+  "Jali",
+  "Brackets",
+  "Balusters",
   "Other",
 ];
 

@@ -25,6 +25,8 @@ export default function About() {
           <div className="location-chip">📍 Bhubaneswar, Odisha</div>
           <div className="location-chip">📍 Patna, Bihar</div>
           <div className="location-chip">📍 Deoghar, Jharkhand</div>
+          <div className="location-chip">📍 Bhagalpur, Bihar</div>
+          <div className="location-chip">📍 Kolkata, West Bengal</div>
         </div>
       </div>
 
@@ -32,7 +34,7 @@ export default function About() {
       <div ref={rightRef} className={`about-right reveal ${rv ? "visible" : ""}`}>
         {[
           { icon: "🏛️", num: "GRC", label: "Technology" },
-          { icon: "🗺️", num: "3", label: "State Presence" },
+          { icon: "🗺️", num: "4", label: "State Presence" },
           { icon: "⚒️", num: "100%", label: "Custom Made" },
           { icon: "⭐", num: "24H", label: "Available Daily" },
         ].map((c) => (

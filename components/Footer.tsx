@@ -10,7 +10,8 @@ export default function Footer() {
       </div>
       <div className="footer-hours">
         <span>Open 24 Hours</span><br />
-        +91 78271 34265
+        +91 78271 34265<br />
+        piyushkumars083@gmail.com
       </div>
     </footer>
   );
