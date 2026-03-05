@@ -80,7 +80,7 @@ export const projects = [
 /** Statistics displayed in the strip */
 export const stats = [
   { num: "10+",  label: "Projects Completed" },
-  { num: "3",    label: "States Served"       },
+  { num: "4",    label: "States Served"       },
   { num: "100%", label: "Custom Built"        },
   { num: "24H",  label: "Support"             },
 ];

@@ -77,7 +77,7 @@ export default function Hero() {
       {/* Stats bar */}
       <div className="hero-stats">
         {[
-          { num: "3", label: "States" },
+          { num: "4", label: "States" },
           { num: "24H", label: "Open Daily" },
           { num: "GRC", label: "Specialists" },
           { num: "100%", label: "Custom Made" },

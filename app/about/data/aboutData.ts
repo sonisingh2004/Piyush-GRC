@@ -1,6 +1,6 @@
 export const stats = [
   { num: "2025", label: "Year Established" },
-  { num: "3", label: "States Covered" },
+  { num: "4", label: "States Covered" },
   { num: "100%", label: "Custom Made" },
   { num: "24H", label: "Open Daily" },
 ];
