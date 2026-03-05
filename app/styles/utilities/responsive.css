@@ -1,0 +1,602 @@
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  #hero {
+    min-height: 100vh;
+    padding: 8rem 5% 3rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding-bottom: 0;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-eyebrow::before {
+    width: 30px;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 3.2rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-desc {
+    font-size: 0.85rem;
+    line-height: 1.75;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem 2rem;
+    font-size: 0.68rem;
+  }
+
+  .hero-stats {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .stat {
+    padding-left: 1rem;
+  }
+
+  .stat-num {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.6rem;
+  }
+
+  .hero-image-stack {
+    display: none;
+  }
+
+  #about {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-card.featured {
+    grid-column: span 2;
+    aspect-ratio: 4/3;
+  }
+
+  #features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature-item:nth-child(2) {
+    border-right: none;
+  }
+
+  #contact {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .projects-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  /* Mobile Navigation */
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background: rgba(14, 13, 11, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5rem 2rem 2rem;
+    border-left: 1px solid rgba(201, 168, 76, 0.2);
+    transition: right 0.4s ease;
+  }
+
+  .nav-links.mobile-active {
+    right: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  /* Projects Page - Mobile */
+  .about-card {
+    padding: 2rem 1rem;
+  }
+
+  .about-card-num {
+    font-size: 1.5rem;
+  }
+
+  .about-card-label {
+    font-size: 0.6rem;
+  }
+
+  /* About Page Responsive - Tablet */
+  .about-story-grid {
+    grid-template-columns: 1fr !important;
+    gap: 4rem !important;
+  }
+
+  .about-locations-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .about-hero-section {
+    padding: 6rem 5% 4rem !important;
+  }
+
+  /* Hero responsive */
+  .hero-eyebrow {
+    font-size: 0.65rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  /* Feature cards - remove border on last in mobile view */
+  .feature-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .feature-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .feature-text {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  /* Table container responsiveness */
+  table {
+    font-size: 0.75rem !important;
+  }
+
+  th,
+  td {
+    padding: 0.7rem 1rem !important;
+  }
+
+  /* Contact Form Section - Stack form and info sections */
+  .contact-form-section {
+    grid-template-columns: 1fr !important;
+    gap: 4rem !important;
+    padding: 6rem 5% !important;
+  }
+
+  /* Contact info adjustments */
+  .contact-icon {
+    font-size: 1.6rem;
+  }
+
+  .contact-label {
+    font-size: 0.68rem;
+  }
+
+  .contact-val {
+    font-size: 0.92rem;
+  }
+
+  /* Form title */
+  .form-title {
+    font-size: 1.6rem;
+  }
+
+  /* About tag mobile */
+  .about-tag {
+    font-size: 0.65rem !important;
+  }
+
+  .about-title {
+    font-size: 1.8rem !important;
+  }
+
+  /* Form fields */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.85rem 1.1rem;
+    font-size: 0.88rem;
+  }
+
+  .submit-btn {
+    padding: 0.95rem 1.8rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card.featured {
+    grid-column: span 1;
+    aspect-ratio: 4/3;
+  }
+
+  #features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-item {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 2.5rem 1.5rem;
+  }
+
+  .feature-item:last-child {
+    border-bottom: none;
+  }
+
+  /* Projects Page - Mobile Specific */
+  .section-title {
+    font-size: clamp(1.5rem, 5vw, 2rem) !important;
+  }
+
+  .section-sub {
+    font-size: 1rem !important;
+  }
+
+  .about-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-card-num {
+    font-size: 1.3rem;
+  }
+
+  .about-card-label {
+    font-size: 0.55rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem 1.5rem;
+    font-size: 0.65rem;
+  }
+
+  .section-header {
+    margin-bottom: 3rem !important;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* About Page Responsive - Mobile */
+  .about-hero-stats {
+    flex-direction: column !important;
+    gap: 0 !important;
+    max-width: 400px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .about-hero-stat {
+    border-left: 1px solid var(--border) !important;
+  }
+
+  .about-story-grid {
+    padding: 4rem 5% !important;
+  }
+
+  .about-image-container {
+    margin-bottom: 2rem;
+  }
+
+  .about-floating-card {
+    bottom: -1rem !important;
+    right: -1rem !important;
+    padding: 1rem 1.5rem !important;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-milestones-grid {
+    padding-left: 0 !important;
+  }
+
+  .about-milestone-item {
+    grid-template-columns: auto 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .about-milestone-line {
+    left: 12px !important;
+    transform: none !important;
+  }
+
+  .about-milestone-content {
+    text-align: left !important;
+    padding: 0 !important;
+  }
+
+  .about-locations-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-section-padding {
+    padding: 4rem 5% !important;
+  }
+
+  .about-hero-section {
+    padding: 5rem 5% 3rem !important;
+  }
+
+  /* Smaller hero text */
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.88rem !important;
+  }
+
+  /* Feature cards stacking */
+  .feature-icon {
+    font-size: 2rem;
+  }
+
+  .feature-title {
+    font-size: 0.88rem;
+  }
+
+  .feature-text {
+    font-size: 0.78rem;
+  }
+
+  /* Table adjustments */
+  table {
+    font-size: 0.7rem !important;
+  }
+
+  th {
+    font-size: 0.65rem !important;
+    padding: 0.6rem 0.8rem !important;
+  }
+
+  td {
+    padding: 0.6rem 0.8rem !important;
+  }
+
+  /* Mobile - single column forms */
+  .form-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-form-section {
+    padding: 5rem 5% !important;
+    gap: 3rem !important;
+  }
+
+  /* Smaller contact info */
+  .contact-info-row {
+    padding: 1.2rem 0;
+  }
+
+  .contact-icon {
+    font-size: 1.4rem;
+  }
+
+  .contact-label {
+    font-size: 0.64rem;
+  }
+
+  .contact-val {
+    font-size: 0.88rem;
+  }
+
+  /* Form adjustments */
+  .form-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+
+  .form-group label {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.8rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .submit-btn {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.72rem;
+  }
+
+  /* FAQ mobile */
+  .section-header {
+    text-align: center;
+  }
+}
+
+/* Extra Small Mobile (480px and below) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .section-sub {
+    font-size: 0.9rem !important;
+  }
+
+  .about-card {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .about-card-num {
+    font-size: 1.2rem;
+  }
+
+  .about-card-label {
+    font-size: 0.52rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.6rem;
+  }
+
+  .feature-item {
+    padding: 2rem 1rem;
+  }
+
+  .product-name {
+    font-size: 0.95rem !important;
+  }
+
+  .product-cat {
+    font-size: 0.55rem !important;
+  }
+
+  /* Extra small mobile */
+  .hero-eyebrow {
+    font-size: 0.6rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.82rem !important;
+  }
+
+  .feature-icon {
+    font-size: 1.8rem;
+  }
+
+  .feature-title {
+    font-size: 0.82rem;
+  }
+
+  .feature-text {
+    font-size: 0.75rem;
+  }
+
+  table {
+    font-size: 0.65rem !important;
+    min-width: 450px !important;
+  }
+
+  th {
+    font-size: 0.6rem !important;
+    padding: 0.5rem 0.6rem !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  td {
+    padding: 0.5rem 0.6rem !important;
+  }
+
+  /* Extra small mobile */
+  .contact-form-section {
+    padding: 4rem 5% !important;
+  }
+
+  .contact-icon {
+    font-size: 1.3rem;
+  }
+
+  .contact-label {
+    font-size: 0.6rem;
+  }
+
+  .contact-val {
+    font-size: 0.82rem;
+  }
+
+  .form-title {
+    font-size: 1.3rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.75rem 0.9rem;
+    font-size: 0.82rem;
+  }
+
+  .submit-btn {
+    padding: 0.85rem 1.2rem;
+    font-size: 0.68rem;
+  }
+}

@@ -1,0 +1,65 @@
+/* CONTACT */
+#contact {
+  padding: 7rem 8%;
+  background: var(--charcoal);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.contact-info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-info-row:last-of-type {
+  border-bottom: none;
+}
+
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  color: var(--gold);
+}
+
+.contact-label {
+  font-size: 0.63rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 0.3rem;
+}
+
+.contact-val {
+  font-size: 0.95rem;
+  color: var(--cream);
+  line-height: 1.6;
+}
+
+.contact-val a {
+  color: var(--cream);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-val a:hover {
+  color: var(--gold);
+}
+
+/* Contact Form Section - Base Grid Layout */
+.contact-form-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}

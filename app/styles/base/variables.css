@@ -1,0 +1,12 @@
+:root {
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --gold-dim: #9a7a36;
+  --cream: #f7f3ec;
+  --off-white: #faf8f4;
+  --charcoal: #1a1814;
+  --dark: #0e0d0b;
+  --mid: #2e2b25;
+  --text-muted: #8a8070;
+  --border: rgba(201, 168, 76, 0.25);
+}
