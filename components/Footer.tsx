@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer>
@@ -6,7 +8,7 @@ export default function Footer() {
       </div>
       <div className="footer-text">
         © 2025 Piyush GRC. All rights reserved.<br />
-        Glass Fiber Reinforced Concrete Manufacturer &amp; Supplier
+        <Link href="https://briskodetechnology.com/ " target="_blank">DESIGNED BY BRISKODE TECHNOLOGY PVT.LTD</Link>
       </div>
       <div className="footer-hours">
         <span>Open 24 Hours</span><br />

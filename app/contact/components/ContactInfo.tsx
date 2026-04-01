@@ -1,5 +1,6 @@
 "use client";
 import { useReveal } from "@/hooks/useReveal";
+import Link from "next/link";
 import { contactInfo } from "../data/contactData";
 
 export default function ContactInfo() {
@@ -22,9 +23,9 @@ export default function ContactInfo() {
           <div>
             <div className="contact-label">{c.label}</div>
             {c.href ? (
-              <a href={c.href} className="contact-val" style={{ display: "block" }}>
+              <Link href={c.href} className="contact-val" style={{ display: "block" }}>
                 {c.value}
-              </a>
+              </Link>
             ) : (
               <div className="contact-val">{c.value}</div>
             )}

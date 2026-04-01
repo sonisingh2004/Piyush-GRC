@@ -1,5 +1,6 @@
 "use client";
 import { useReveal } from "@/hooks/useReveal";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Contact() {
@@ -62,7 +63,7 @@ export default function Contact() {
           <div>
             <div className="contact-label">Phone</div>
             <div className="contact-val">
-              <a href="tel:+917827134265">+91 78271 34265</a>
+              <Link href="tel:+917827134265">+91 78271 34265</Link>
             </div>
           </div>
         </div>
@@ -72,7 +73,7 @@ export default function Contact() {
           <div>
             <div className="contact-label">Email</div>
             <div className="contact-val">
-              <a href="mailto:piyushkumars083@gmail.com">piyushkumars083@gmail.com</a>
+              <Link href="mailto:piyushkumars083@gmail.com">piyushkumars083@gmail.com</Link>
             </div>
           </div>
         </div>
