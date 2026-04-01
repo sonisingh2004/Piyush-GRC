@@ -50,8 +50,8 @@ export default function CTABanner() {
         <Link href="tel:+917827134265" className="btn-primary">
           📞 +91 78271 34265
         </Link>
-        <Link href="/products" className="btn-outline">
-          View Products
+        <Link href="/projects" className="btn-outline">
+          View Projects
         </Link>
       </div>
     </section>
